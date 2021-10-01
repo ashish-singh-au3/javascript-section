@@ -30,6 +30,7 @@ function same(array1, array2) {
       return false;
     }
   }
+  return true;
 }
 
-console.log(same([1, 2, 3, 2, 5], [9, 1, 4, 4, 11]));
+console.log(same([1, 2, 3, 2, 5], [9, 1, 4, 4, 25]));
