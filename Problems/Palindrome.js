@@ -12,3 +12,12 @@ function isPalindrome(str) {
 
 console.log(isPalindrome("Madam"));
 console.log(isPalindrome("hello"));
+
+//Shorter code
+
+function isPalindromeShorterVersion(str) {
+  str = str.toLowerCase();
+  return str === str.split("").reverse().join("");
+}
+
+console.log(isPalindromeShorterVersion("madaM"));
