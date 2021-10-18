@@ -7,3 +7,11 @@ function reverseAstring(str) {
 
 console.log(reverseAstring("abcd"));
 console.log(reverseAstring("Hello"));
+
+//ANother way
+
+function anotherWayOfReversingAstring(str) {
+  return str.split("").reverse().join("");
+}
+
+console.log(anotherWayOfReversingAstring("qwerty"));
