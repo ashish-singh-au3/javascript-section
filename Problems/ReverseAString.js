@@ -15,3 +15,17 @@ function anotherWayOfReversingAstring(str) {
 }
 
 console.log(anotherWayOfReversingAstring("qwerty"));
+
+//Without using reverse() sol
+
+function reverseAstringWithoutUsingReverse(str) {
+  let result = ""; //empty arr
+
+  for (let i = 0; i < str.length; i++) {
+    const char = str[i]; //assigning char variable with first val
+    result = char + result;
+  }
+  return result;
+}
+
+console.log(reverseAstringWithoutUsingReverse("asdfg"));
