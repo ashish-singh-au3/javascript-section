@@ -1,6 +1,6 @@
 function capitalizeAlgo(str) {
   //splitting the str first to make it easier
-  let arrayOfWords = str.split(" "); // leaving space in split so that the words don't get clubbed together
+  let arrayOfWords = str.split(" "); // leaving space in split so that the letters don't get clubbed together
   let arrayOfWordsCased = []; //empty
 
   for (let i = 0; i < arrayOfWords.length; i++) {
