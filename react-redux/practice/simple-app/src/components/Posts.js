@@ -4,8 +4,6 @@ export default class Posts extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: "",
-      body: "",
       posts: [],
     };
   }
