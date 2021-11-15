@@ -9,6 +9,7 @@ function App() {
         This is just for Rev
       </h1>
       <PostForm />
+      <hr />
       <Posts />
     </div>
   );
