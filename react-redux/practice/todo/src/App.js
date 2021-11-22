@@ -1,4 +1,6 @@
 import React from "react";
+
+import Form from "./components/inputForm";
 import "./App.css";
 
 function App() {
@@ -7,6 +9,7 @@ function App() {
       <h1 className="heading">
         <center>Ashish's ToDo List</center>
       </h1>
+      <Form />
     </div>
   );
 }
