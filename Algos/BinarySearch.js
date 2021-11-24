@@ -2,6 +2,8 @@
 // for the provided value.
 // The Binary Search Algorithm will return the index of value found, or -1 if not found.
 
+// Binary search only works for sorted arrays **********************
+
 const binarySearch = (sortedArray, value) => {
   let left = 0;
   let right = sortedArray.length - 1;
