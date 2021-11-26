@@ -4,12 +4,12 @@ import Button from "@mui/material/Button";
 import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
 
-const ToDoList = () => {
+const ToDo = ({ todos, setTodos, text }) => {
   return (
     <div>
       <center>
         {" "}
-        <li className="todo-items">Here the todo will come</li>
+        <li className="todo-items">{text}</li>
         <Button style={{ margin: "10px" }} type="submit" variant="contained">
           <CheckIcon />
         </Button>
@@ -21,4 +21,4 @@ const ToDoList = () => {
   );
 };
 
-export default ToDoList;
+export default ToDo;

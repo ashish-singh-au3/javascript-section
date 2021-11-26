@@ -1,10 +1,11 @@
 import { useState } from "react";
 
 import Form from "./components/Form";
-import ToDo from "./components/ToDo";
+import ToDoList from "./components/ToDoList";
 
 function App() {
   const [inputText, setInputText] = useState("");
+  const [todos, setTodos] = useState([]);
 
   return (
     <div className="App">
@@ -13,8 +14,13 @@ function App() {
         <h1 style={{ marginTop: "50px" }}>SImple practice App</h1>
       </center>
 
-      <Form inputText={inputText} setInputText={setInputText} />
-      <ToDo />
+      <Form
+        todos={todos}
+        setTodos={setTodos}
+        inputText={inputText}
+        setInputText={setInputText}
+      />
+      <ToDoList setTodos={setTodos} todos={todos} />
     </div>
   );
 }
