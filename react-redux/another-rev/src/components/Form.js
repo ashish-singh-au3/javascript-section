@@ -39,6 +39,7 @@ const Form = ({ todos, setTodos, inputText, setInputText }) => {
           <div className="form-group">
             <h2 style={{ marginTop: "10%" }}>To Do List </h2>
             <input
+              required
               type="text"
               value={inputText}
               onChange={inputTextHandler}
