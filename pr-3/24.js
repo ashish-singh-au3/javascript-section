@@ -9,3 +9,9 @@ function reverseAString(str) {
 }
 
 console.log(reverseAString("HellO"));
+
+function reverseAStringTwo(str) {
+  return str.split("").reverse().join("");
+}
+
+console.log(reverseAStringTwo("abcde"));
