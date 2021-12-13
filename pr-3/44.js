@@ -9,3 +9,9 @@ function strReversal(str) {
 }
 
 console.log(strReversal("QwerTy"));
+
+function strReversalTwo(str) {
+  return str.split("").reverse().join("");
+}
+
+console.log(strReversalTwo("HeLLo"));
