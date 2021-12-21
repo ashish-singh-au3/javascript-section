@@ -14,5 +14,12 @@ const newArrayIncludingPersonsAge = persons.map((personObj) => {
   };
 });
 
+//get only ids
+
+const personsIds = persons.map((personObj) => {
+  return personObj.id;
+});
+
 console.log("persons", persons);
 console.log("newArrayIncludingPersonsAge", newArrayIncludingPersonsAge);
+console.log("personsIds", personsIds);
