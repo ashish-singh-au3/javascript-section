@@ -22,5 +22,15 @@ const arrayOfCityAfterAddingTheAge = arrayOfCity.map((citiesObject) => {
   };
 });
 
+//get only age
+
+const cityAge = arrayOfCityAfterAddingTheAge.map((citiesObject) => {
+  return {
+    age: citiesObject.age,
+  };
+});
+
 console.log("this is initial array of cities", arrayOfCity);
 console.log("this is new array", arrayOfCityAfterAddingTheAge);
+
+console.log("this will show the age of city", cityAge);
