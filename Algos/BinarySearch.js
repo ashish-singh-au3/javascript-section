@@ -23,4 +23,4 @@ const binarySearch = (sortedArray, value) => {
   return -1;
 };
 
-console.log(binarySearch([5, 10, 15, 20, 25, 32, 40], 25)); //4
+console.log(binarySearch([5, 10, 15, 20, 25, 32, 40], 20)); //3
