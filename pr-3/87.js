@@ -19,7 +19,7 @@ const personDetailsArrayWithAge = personDetails.map((newPersonDetails) => {
 
 console.log("new array with age :", personDetailsArrayWithAge);
 
-//get only age from arr
+//get only city from arr
 
 const getOnlyCityFromPersonsArray = personDetails.map((newPersonDetails) => {
   return {
@@ -28,3 +28,13 @@ const getOnlyCityFromPersonsArray = personDetails.map((newPersonDetails) => {
 });
 
 console.log("only city from array", getOnlyCityFromPersonsArray);
+
+//get only name
+
+const getOnlyNameFromPersonsArray = personDetails.map((newPersonDetails) => {
+  return {
+    name: newPersonDetails.name,
+  };
+});
+
+console.log("only name from array", getOnlyNameFromPersonsArray);
