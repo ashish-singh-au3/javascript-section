@@ -16,3 +16,22 @@ let name2 = {
 //borrowing function from other objects using call
 
 names.printFullName.call(name2);
+
+//adding parameters
+
+let names3 = {
+  firstName: "Ashish",
+  lastName: "Singh",
+};
+let printFullName = function (hometown) {
+  console.log(this.firstName + " " + this.lastName + " from " + hometown);
+};
+
+printFullName.call(names3, "Delhi");
+
+let name4 = {
+  firstName: "Qwerty",
+  lastName: "No",
+};
+
+printFullName.call(name4, "Kashmir");
