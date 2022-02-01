@@ -35,3 +35,23 @@ let name4 = {
 };
 
 printFullName.call(name4, "Kashmir");
+
+//Pr
+
+let data = {
+  firstData: "random",
+  secondData: "last",
+};
+
+let getData = function (extraData) {
+  console.log(this.firstData + " " + this.secondData + " " + extraData);
+};
+
+getData.call(data, "& this is extra data"); //calling
+
+let data2 = {
+  firstData: "random data2",
+  secondData: "last data2",
+};
+
+getData.call(data2, "& this is from data2");
