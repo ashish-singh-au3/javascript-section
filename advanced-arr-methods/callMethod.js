@@ -1,4 +1,4 @@
-let name = {
+let names = {
   firstName: "Ashish",
   lastName: "Singh",
   printFullName: function () {
@@ -6,7 +6,7 @@ let name = {
   },
 };
 
-name.printFullName();
+names.printFullName();
 
 let name2 = {
   firstName: "Qwerty",
@@ -14,3 +14,5 @@ let name2 = {
 };
 
 //borrowing function from other objects using call
+
+names.printFullName.call(name2);
