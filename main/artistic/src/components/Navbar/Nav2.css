@@ -9,15 +9,19 @@
 .heading-sub-names {
   font-size: 20px;
   margin-top: 20px;
-  float: right;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
+  margin-left: 25px;
 
-  font-family: "PT Serif";
+  font-family: "Solway";
 }
 
 .login-btn {
-  margin-top: 20px;
-  float: left;
+  margin-top: 12px;
+  margin-left: 70px;
 
-  font-family: "PT Serif";
+  font-family: "Solway";
+}
+.login-btn:hover {
+  color: brown;
+  background-color: white;
 }

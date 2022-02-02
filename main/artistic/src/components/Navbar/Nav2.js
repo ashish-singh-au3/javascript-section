@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import { FaPaintBrush } from "react-icons/fa";
-import Button from "@mui/material/Button";
+import Button from "react-bootstrap/Button";
 
 import "./Nav2.css";
 
@@ -32,6 +32,9 @@ export default class Nav2 extends Component {
                 <Nav.Link href="/for-art-collectors">
                   <h4 className="heading-sub-names">Art Collectors</h4>{" "}
                 </Nav.Link>
+                <Button className="login-btn" variant="outline-primary">
+                  Login/SignUp{" "}
+                </Button>{" "}
               </Nav>
             </Navbar.Collapse>
           </Container>
