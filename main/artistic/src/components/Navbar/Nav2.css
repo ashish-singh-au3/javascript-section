@@ -1,0 +1,23 @@
+.heading {
+  margin-top: 10px;
+  padding-bottom: 15px;
+  font-family: cursive;
+  font-size: 50px;
+  color: rgb(36, 5, 5);
+}
+
+.heading-sub-names {
+  font-size: 20px;
+  margin-top: 20px;
+  float: right;
+  padding-bottom: 15px;
+
+  font-family: "PT Serif";
+}
+
+.login-btn {
+  margin-top: 20px;
+  float: left;
+
+  font-family: "PT Serif";
+}
