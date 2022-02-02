@@ -1,11 +1,20 @@
-import "./App.css";
+import React from "react";
 
-function App() {
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Collectors from "./components/ArtCollectors/Collectors";
+import Corporates from "./components/Corporates/Corporates";
+import Artist from "./components/ForArtist/Artist";
+import Home from "./components/Home/Home";
+
+export default function App() {
   return (
-    <div className="App">
-      <h3>App is clean</h3>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/for-artists" element={<Artist />} />
+        <Route path="/for-art-collectors" element={<Collectors />} />
+        <Route path="/for-corporates" element={<Corporates />} />
+      </Routes>
+    </Router>
   );
 }
-
-export default App;
