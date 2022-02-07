@@ -1,6 +1,7 @@
 {
   "name": "another-rev",
   "version": "0.1.0",
+  "homepage":"https://ashish-singh-au3.github.io/artistic",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.6.0",
@@ -18,10 +19,12 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
   },
   "eslintConfig": {
     "extends": [
