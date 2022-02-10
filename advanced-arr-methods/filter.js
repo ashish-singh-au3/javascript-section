@@ -27,10 +27,14 @@ const personDetails = [
 
 const showObjectsOnlyWhoseGenderIsFemale = personDetails.filter(
   (personDetail) => {
-    if (personDetail.gender === "female") {
+    {
+      /* if (personDetail.gender === "female") {
       return true;
     } else {
       return false;
+    }  */
+      //shorter form
+      return personDetail.gender === "female";
     }
   }
 );
