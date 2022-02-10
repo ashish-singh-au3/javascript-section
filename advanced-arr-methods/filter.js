@@ -13,7 +13,7 @@ const personDetails = [
   },
   {
     name: "Shreya",
-    birth: 2000,
+    birth: 2005,
     city: "Punjab",
     gender: "female",
   },
@@ -38,6 +38,15 @@ const showObjectsOnlyWhoseGenderIsFemale = personDetails.filter(
     }
   }
 );
+
+//More filteration with age
+
+const adultFemales = personDetails.filter((personDetail) => {
+  const age = new Date().getFullYear() - personDetail.birth;
+  return age >= 18 && personDetail.gender === "female";
+});
+
+console.log("THis will return only adult females", adultFemales);
 
 console.log(
   "This will only return the objects having gender as female:",
