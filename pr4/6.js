@@ -52,3 +52,22 @@ const personFilterWithMultipleConditions = personDetails.filter(
   }
 );
 console.log(personFilterWithMultipleConditions);
+
+//ANother ex difference bet filters & map
+
+const numbers = [2, 3, 4, 5, 6];
+
+const newNumber = numbers.filter((number) => {
+  return number * 2;
+});
+console.log(newNumber); //it will not return  a new arr
+
+const newTwo = numbers
+  .map((number) => {
+    return number * 2; // this will return a new arr
+  })
+  .filter((number) => {
+    //hence we can perform further actions like filter etc
+    return number >= 7;
+  });
+console.log(newTwo);
