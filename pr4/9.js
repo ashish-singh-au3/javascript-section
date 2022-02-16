@@ -21,4 +21,4 @@ console.log(flattenedArray); //level or depth 1 falttening => [ 1, 2, 3, 4, 5, 6
 
 //method 2
 
-console.log(arr.flat(2)); // level 2 flattening [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+console.log(arr.flat(2)); //Pre defined js method: level 2 flattening [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
