@@ -14,6 +14,7 @@ let order = (time, work) => {
         resolve(work());
       }, time);
     } else {
+      //if shop is closed then this will execute
       reject(console.log("Msg: Shop is closed"));
     }
   });
@@ -49,5 +50,8 @@ console.log(
     })
     .then(() => {
       return order(2000, () => console.log(`Icecream is ready to be served`));
+    })
+    .catch(() => {
+      console.log("Customer left");
     })
 );
