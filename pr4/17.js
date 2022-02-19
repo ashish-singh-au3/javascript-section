@@ -32,3 +32,17 @@ function subNumbers(a, b, callBack) {
 }
 
 console.log(subNumbers(20, 15, sub));
+
+//Undefined
+
+let q;
+
+console.log(q);
+
+//null
+let o = null;
+console.log(o);
+
+//not defined
+
+//console.log(p);
