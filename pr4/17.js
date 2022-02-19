@@ -21,3 +21,14 @@ function addNumbers(num1, num2, callBackFunction) {
 
 // Test case
 console.log(addNumbers(15, 15, result));
+
+function sub(val) {
+  console.log("Substraction result:", val);
+}
+
+function subNumbers(a, b, callBack) {
+  let sub = a - b;
+  callBack(sub);
+}
+
+console.log(subNumbers(20, 15, sub));
