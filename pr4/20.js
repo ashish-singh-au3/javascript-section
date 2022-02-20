@@ -21,3 +21,15 @@ function addMain(num1, num2, callback) {
 }
 
 console.log(addMain(10, 5, resultOfAddition));
+
+function resultOfCube(finalResult) {
+  console.log("The cube of given input is:", finalResult);
+}
+
+function cubeTwo(n, cb) {
+  let cubeRes = n * n * n;
+
+  cb(cubeRes);
+}
+
+console.log(cubeTwo(3, resultOfCube));
