@@ -9,6 +9,8 @@ import {
   Badge,
 } from "react-bootstrap";
 
+import { Link } from "react-router-dom";
+
 import { FaShoppingCart } from "react-icons/fa";
 
 const Header = () => {
@@ -17,7 +19,10 @@ const Header = () => {
       <Navbar variant="dark" bg="dark" style={{ height: "80px" }}>
         <Container>
           <Navbar.Brand>
-            <a href="/">Shopping Cart</a>
+            <Link to="/" style={{ color: "white" }}>
+              {" "}
+              Shopping Cart
+            </Link>
           </Navbar.Brand>
           <Navbar.Text className="search">
             <FormControl
@@ -29,9 +34,12 @@ const Header = () => {
           <Nav>
             {" "}
             <Dropdown alignRight>
-              <Dropdown.Toggle variant="success">
-                <FaShoppingCart style={{ margin: "5px" }} />
-                <Badge style={{ color: "white" }}>{10}</Badge>
+              <Dropdown.Toggle variant="success" style={{ color: "white" }}>
+                <FaShoppingCart
+                  colour="white"
+                  style={{ margin: "5px", color: "white" }}
+                />
+                <Badge bg="none">{10}</Badge>
               </Dropdown.Toggle>
               <Dropdown.Menu>
                 <span style={{ padding: "10px" }}>Cart is empty </span>
