@@ -7,7 +7,7 @@ const personDetails = [
   },
   {
     name: "Amit",
-    birth: 1999,
+    birth: 1997,
     city: "Chennai",
     gender: "male",
   },
@@ -45,3 +45,9 @@ console.log(
   "THis will return the same old array in addition to age property",
   useOfMap
 );
+
+const useOfFilter = personDetails.filter((personDetail) => {
+  return personDetail.birth === 1997;
+});
+
+console.log(useOfFilter);
