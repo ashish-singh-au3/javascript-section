@@ -30,3 +30,18 @@ const useOfFind = personDetails.find((personDetail) => {
 });
 
 console.log(useOfFind);
+
+const useOfMap = personDetails.map((personDetail) => {
+  return {
+    name: personDetail.name,
+    birth: personDetail.birth,
+    gender: personDetail.gender,
+    city: personDetail.city,
+    age: new Date().getFullYear() - personDetail.birth,
+  };
+});
+
+console.log(
+  "THis will return the same old array in addition to age property",
+  useOfMap
+);
