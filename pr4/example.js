@@ -1,10 +1,10 @@
-let stockForPrepChai = {
+const stockForPrepChai = {
   addOns: ["sugar", "tea leaves", "masala powder", "cardamom"],
   liquid: ["water", "milk"],
   holder: ["kulhad", "cup", "cutting"],
 };
 
-let chaiShopOpen = true;
+const chaiShopOpen = true;
 
 function time(miliseconds) {
   return new Promise((resolve, reject) => {
