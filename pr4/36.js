@@ -23,3 +23,22 @@ for (let i = 0; i <= numbers.length; i++) {
 }
 
 // numbers.forEach((number) => console.log(number));
+
+//pr
+
+var a = 2;
+var a = 5; //redeclared and overwrites the prev val
+
+console.log(a); //5
+
+let b = 3;
+
+let b = 6;
+
+console.log(b); //err cz let can not be redeclared , but can be redeclared without initialization
+
+const c = 10;
+
+const c = 20;
+
+console.log(c); //err cs can't be redeclared and a new value can't be reassigned
