@@ -31,4 +31,4 @@ let printDifferentNamesUsingBind = printFullName.bind(
   "Up"
 );
 
-console.log(printDifferentNamesUsingBind());
+printDifferentNamesUsingBind();
