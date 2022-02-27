@@ -5,15 +5,29 @@ let myname = {
   second: "Singh",
 };
 
-let personGetFullName = function () {
-  console.log("Hi" + " " + this.first + " " + this.second);
+let personGetFullName = function (hometown, state) {
+  console.log(
+    "Hi" +
+      " " +
+      this.first +
+      " " +
+      this.second +
+      " from" +
+      " " +
+      hometown +
+      " whose state is " +
+      state
+  );
 };
 
-console.log(personGetFullName.call(myname)); //this keyword will be pointed toward name obj
+console.log(personGetFullName.call(myname, " Kanpur", "UP")); //this keyword will be pointed toward name obj
 
 let anothername = {
   first: "Rish",
   second: "chauhan",
 };
 
-console.log(personGetFullName.call(anothername));
+console.log(personGetFullName.apply(anothername, ["Indore", "MP"]));
+
+let printMyName = personGetFullName.bind(myname, "Kanpur", "UP");
+console.log(printMyName());
