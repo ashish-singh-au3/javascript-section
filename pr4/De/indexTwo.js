@@ -1,9 +1,9 @@
 let count = 0;
 const getData = () => {
-  console.log("Fetching data", count++);
+  console.log("fetch api ...", count++);
 };
 
-const doSomeMagic = function (fn, delay) {
+const doSomeThing = (fn, delay) => {
   let timer;
   return function () {
     let context = this,
@@ -16,4 +16,4 @@ const doSomeMagic = function (fn, delay) {
   };
 };
 
-const beautifulFunction = doSomeMagic(getData, 300);
+const mainFunction = doSomeThing(getData, 300);
