@@ -24,3 +24,7 @@ function sum(x, y, z) {
 }
 
 console.log(sum(...nums));
+
+console.log(typeof NaN); //
+
+console.log(typeof ""); //
