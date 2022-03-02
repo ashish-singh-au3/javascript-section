@@ -48,7 +48,17 @@ const useFind = details.find((detail) => {
 console.log("Find use", useFind);
 
 const useOfForEach = details.forEach((detail, i) => {
-  return detail[1];
+  return detail[1]; //unde
 });
 
 console.log(useOfForEach);
+
+function myFunc() {
+  console.log(this);
+}
+
+let obj = {
+  bool: true,
+  myFunc: myFunc,
+};
+console.log(obj);
