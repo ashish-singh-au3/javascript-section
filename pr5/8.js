@@ -153,3 +153,12 @@ const object1 = {
 for (const [key, value] of Object.entries(object1)) {
   console.log(`${key} : ${value}`);
 }
+
+let count = 0;
+(function immediate() {
+  if (count === 0) {
+    let count = 1;
+    console.log(count); // What is logged?
+  }
+  console.log(count); // What is logged?
+})();
