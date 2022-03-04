@@ -1,16 +1,17 @@
 let count = 0;
 
 const getData = () => {
-  console.log("Fetch data ...", count++);
+  console.log("fetching ...", count++);
 };
 
-let debounce = (fn, delay) => {
+let debounce = function (fn, delay) {
   let timer;
   return function () {
     let context = this,
       args = arguments;
 
-    clearInterval(timer);
+    clearTimeout(timer);
+
     timer = setTimeout(() => {
       fn.apply(context, args);
     }, delay);
