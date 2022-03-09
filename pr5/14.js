@@ -1,16 +1,16 @@
-// function main() {
-//   let count = 10;
-//   function timer(i) {
-//     for (let i = 0; i < 10; i++) {
-//       setTimeout(() => {
-//         console.log(count);
-//         count--;
-//       }, i * 1000);
-//     }
-//   }
-//   timer();
-// }
-// main();
+function main() {
+  let count = 10;
+  function timer(i) {
+    for (var i = 0; i < 10; i++) {
+      setTimeout(() => {
+        console.log(count);
+        count--;
+      }, i * 1000);
+    }
+  }
+  timer();
+}
+main();
 
 // function add() {
 //   let a = 5;
@@ -301,11 +301,11 @@
 // }
 // console.log(currying(1)(2)(3));
 
-function add(a) {
-  return function (b) {
-    if (b) return add(a + b);
-    return a;
-  };
-}
+// function add(a) {
+//   return function (b) {
+//     if (b) return add(a + b);
+//     return a;
+//   };
+// }
 
-console.log(add(1)(2)(3)(4)());
+// console.log(add(1)(2)(3)(4)());
