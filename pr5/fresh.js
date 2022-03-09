@@ -9,20 +9,20 @@ document.querySelector("#products").addEventListener("click", (e) => {
 let count = 0;
 
 const getData = () => {
-  console.log("Fetching data....", count++);
+  console.log("fetching ...", count++);
 };
 
-let mainFunction = (fn, delay) => {
+let mainFunc = (fn, delay) => {
   let timer;
   return function () {
     let context = this,
       args = arguments;
 
-    clearInterval(timer);
+    clearTimeout(timer);
     timer = setTimeout(() => {
       fn.apply(context, args);
     }, delay);
   };
 };
 
-let debounce = mainFunction(getData, 300);
+let debounce = mainFunc(getData, 300);
