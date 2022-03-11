@@ -62,3 +62,68 @@
 // };
 
 // console.log(flatten(course));
+
+// function one() {
+//   let a = 5;
+//   function two() {
+//     console.log(a);
+//   }
+//   two();
+// }
+// one();
+
+// function outer() {
+//   let count = 10;
+
+//   function inner(i) {
+//     for (let i = 0; i < count; i++) {
+//       setTimeout(() => {
+//         console.log(count);
+//         count--;
+//       }, i * 1000);
+//     }
+//   }
+//   inner();
+// }
+// console.log(outer());
+
+// function one() {
+//   for (var i = 0; i < 5; i++) {
+//     setTimeout(function log() {
+//       console.log(i);
+//     }, i * 1000);
+//   }
+// }
+
+// console.log(one());
+
+// function outer() {
+//   function inner() {
+//     for (var i = 0; i < 5; i++) {
+//       console.log(i);
+//     }
+//   }
+//   setTimeout(inner, 1000);
+// }
+// outer();
+
+// let obj = {
+//   one: "what's up",
+//   two: "new",
+// };
+
+// let printObj = function (state, city) {
+//   console.log(this.one + " " + this.two + " " + state + ", " + city);
+// };
+
+// let obj2 = {
+//   one: "this is obj2",
+//   two: " kaam",
+// };
+
+// printObj.call(obj2, "UP", "kanpur");
+
+// printObj.apply(obj, ["Punjab", "Chandigarh"]);
+
+// let useBind = printObj.bind(obj2, "TN", "Chennai");
+// useBind();
