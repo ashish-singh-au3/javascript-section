@@ -127,3 +127,32 @@
 
 // let useBind = printObj.bind(obj2, "TN", "Chennai");
 // useBind();
+
+// // let nums2 = [6, 7, 8, 9, 10];
+
+// // let res = [...nums, ...nums2];
+
+// nums = [...nums, 6, 7, 8, 9];
+// console.log(nums);
+
+// let nums = [1, 2, 3, 4, 5, 1, 1, 1, 2, 2, 3, 3];
+
+// const res = nums.filter((num, index) => {
+//   return nums.indexOf(num) === index;
+// });
+
+// console.log(res);
+
+// nums.forEach((element) => {
+//   console.log(element);
+// });
+
+// let nums = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// let res = nums.slice(-2);
+
+// console.log(res);
+
+// setTimeout(function () {
+//   console.log("workattech");
+// }, 2000);
