@@ -89,3 +89,32 @@
 //   setTimeout(log, 1000);
 // }
 // two();
+
+const course = {
+  name: "Introduction to JavaScript",
+  isPaid: true,
+  cost: {
+    amount: 999,
+    currency: "INR",
+    further: {
+      new: 100,
+      ran: "RUP",
+    },
+  },
+};
+
+const letsFlatten = (obj) => {
+  let res = {};
+  for (const [key, value] of Object.entries(obj)) {
+    if (typeof value === "object") {
+      for (const [internalkey, internalvalue] of Object.entries(value)) {
+        res[key + "." + internalkey] = internalvalue;
+      }
+    } else {
+      res[key] = value;
+    }
+  }
+  return res;
+};
+
+console.log(letsFlatten(course));
