@@ -17,3 +17,5 @@ function searchVal(arr, pattern) {
 }
 
 console.log(searchVal("lollipop", "lol"));
+
+console.log(typeof number);
