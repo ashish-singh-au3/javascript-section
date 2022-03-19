@@ -16,3 +16,17 @@ function infCurrying(a) {
 }
 
 console.log(infCurrying(1)(2)(3)(4)());
+
+let obj1 = {
+  first: "Hey",
+  sec: "Hi",
+};
+
+let obj2 = {
+  one: "I am something",
+  two: "I am nothing",
+};
+
+obj2.__proto__ = obj1;
+
+console.log(obj2.first + " " + obj2.two);
