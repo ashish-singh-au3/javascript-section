@@ -25,3 +25,18 @@ const flatten = (object) => {
 };
 
 console.log(flatten(course));
+
+let obj1 = {
+  first: "This is first statement",
+  second: "second",
+};
+
+let obj2 = {
+  third: "Hey,",
+  fourth: "Hola",
+  fifth: 10,
+};
+
+obj2.__proto__ = obj1;
+
+console.log(obj2.third + " " + obj2.first + " " + obj2.fifth);
