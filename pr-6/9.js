@@ -4,7 +4,7 @@ const stock = {
   holder: ["kulhad", "cup"],
 };
 
-let shopOpen = false;
+let shopOpen = true;
 
 let order = (time, work) => {
   return new Promise((resolve, reject) => {
