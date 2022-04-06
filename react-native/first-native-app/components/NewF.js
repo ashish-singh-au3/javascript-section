@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button, View, Text } from "react-native";
 
 function NewF() {
-  const [count, setCount] = useState(4);
+  const [count, setCount] = useState(0);
 
   function incr() {
     setCount(count + 1);
@@ -11,6 +11,8 @@ function NewF() {
   return (
     <View>
       <Button onPress={incr} title="+" />
+      <br />
+      <Button onPress={() => setCount(count - 1)} title="-" />
       <Text>Count : {count}</Text>
     </View>
   );
