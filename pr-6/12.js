@@ -5,3 +5,13 @@ const useOfFilter = numbers.filter((num, idx) => {
 });
 
 console.log(useOfFilter);
+
+const useOfMap = numbers
+  .map((number) => {
+    return number * number;
+  })
+  .filter((number) => {
+    return number >= 1;
+  });
+
+console.log(useOfMap);
