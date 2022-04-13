@@ -11,7 +11,7 @@ function NewF() {
   return (
     <View>
       <Button onPress={incr} title="+" />
-      <br />
+
       <Button onPress={() => setCount(count - 1)} title="-" />
       <Text>Count : {count}</Text>
     </View>
