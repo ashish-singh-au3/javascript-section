@@ -25,3 +25,20 @@ const flatten = (obj) => {
 };
 
 console.log(flatten(course));
+
+function mul(a) {
+  return (b) => {
+    return (c) => {
+      return a * b * c;
+    };
+  };
+}
+console.log(mul(1)(2)(3));
+
+function infCur(a) {
+  return function (b) {
+    if (b) return infCur(a * b);
+    return a;
+  };
+}
+console.log(infCur(1)(2)(3)(4)(5)());
